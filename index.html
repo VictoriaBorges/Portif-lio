@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 	<head>
 		<meta charset="UTF-8">
 		
@@ -8,26 +7,28 @@
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Victoria Borges">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-	
-		<link rel = "stylesheet" href="./assets/css/style.css">
 		
+		<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+
+		<!-- Link para a Folha de Estilo da Página - CSS -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
 		<title>Meu Perfil</title>
 	</head>
-
 	<body>
 
 		<!-- Cabeçalho da Página (header) -->
 		<header>
 
 			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
+			<div id="header_content" class="flex">
 
 				<!-- Titulo do Cabeçalho -->
 				<div id="titulo">
 
 					<!-- Seu nome -->
 					<h1>Victoria Borges</h1>
-					<h2>Desenvolvedora Full stack</h2>
+					<h2>Desenvolvedora Fullstack</h2>
 
 				</div>
 
@@ -59,40 +60,42 @@
 		<main>
 
 			<!-- Seção Sobre você -->
-			<section id="about">
+			<section id="about" class="flex_start">
 
 				<!-- Título da Seção -->
 				<h2>Sobre </h2>
 
 				<!-- Conteúdo da Seção -->
-				<div id="conteudo">
+				<div id="conteudo" class="flex">
 
 					<!-- Imagem do criador do conteúdo -->
-					<img src="./assets/img/user_03.png" alt="Foto do criador desse conteudo"/>
-				
+					<img
+					 src="https://github.com/VictoriaBorges.png" 
+					alt="Foto do criador desse conteúdo" 
+					class="img_profile">
+			   
+					
 
 					<!-- Texto sobre o criador do conteúdo -->
 					<article id="sobre_texto">
 
 						<p>
-							Com uma base sólida em administração publica, desenvolvi habilidades
-                             analíticas e estratégicas que agora aplico diretamente em minha carreira como 
-                             Desenvolvedora Full Stack Jr. Ao longo da minha formação em Análise e Desenvolvimento de Sistemas,
-                            pude perceber como a inteligência estratégica e o olhar para processos eficientes são essenciais na 
-                              criação de soluções tecnológicas eficientes.
+							Com uma base sólida em administração publica, desenvolvi habilidades 
+							analíticas e estratégicas que agora aplico diretamente em minha carreira como Desenvolvedora Full Stack Jr. Ao longo da minha formação em Análise e Desenvolvimento de Sistemas, pude perceber como a inteligência estratégica e o olhar para processos 
+							eficientes são essenciais na criação de soluções tecnológicas eficientes.
+							Minha experiência em Administração me ajudou a aprimorar minha capacidade de lidar com dados e tomada de 
+							decisões, habilidades que transitei diretamente para o campo da
+							 tecnologia. Agora, tenho um forte interesse por 
+							 Java, JavaScript, HTML/CSS, Spring, MySQL e Análise de dados. 
+							 Continuo aplicando minha visão estratégica em cada projeto, 
+							 visando a otimização e a entrega de resultados que atendam às necessidades reais dos usuários.
 						</p>
 						<p>
-                            Minha experiência em Administração me ajudou a aprimorar minha capacidade de lidar com dados e tomada de decisões, 
-                            habilidades que transitei diretamente para o campo da tecnologia. Agora, tenho um forte interesse por Java, 
-                            JavaScript, HTML/CSS, Spring, MySQL e Análise de dados. Continuo aplicando minha visão estratégica em cada projeto, 
-                            visando a otimização e a entrega de resultados que atendam às necessidades reais dos usuários.
-							
+							Sou apaixonada por aprender e aplicar soluções inovadoras que conectam 
+							gestão inteligente e tecnologia. Estou em busca de oportunidades que me
+							permitam usar minha experiência para criar soluções escaláveis, 
+							funcionais e que tragam impacto para o mercado.
 						</p>
-                        <p> 
-                            Sou apaixonada por aprender e aplicar soluções inovadoras que conectam gestão inteligente e tecnologia. 
-                            Estou em busca de oportunidades que me permitam usar minha experiência para criar soluções escaláveis, 
-                            funcionais e que tragam impacto para o mercado.
-                        </p>
 
 					</article>
 
@@ -101,19 +104,21 @@
 			</section>
 
 			<!-- Seção contendo um vídeo de sua preferência -->
-			<section id="video">
+			<section id="video" class="flex_start">
 
 				<!-- Título da Seção -->
-				<h2>Meu vídeo favorito:</h2>
+				<h2>Minha musica favorita:</h2>
 
 				<!-- Vídeo da Seção -->
-				<div id="youtube">
-                   
-                <iframe width="972" height="729" 
-                src="https://www.youtube.com/embed/pvRO6WWMr3M" 
-                title="Os Padrinhos Màgicos: Desejo ser o mais querido / Taí o seu desejo - Ep.32"
-                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<div id="youtube" class="flex">
+
+					
+					<iframe width="1193" 
+					height="738" src="https://www.youtube.com/embed/PTDgP3BDPIU" title="Emicida - AmarElo (Sample: Belchior - Sujeito de Sorte) part. Majur e Pabllo Vittar" frameborder="0"
+					 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+					 allowfullscreen></iframe>
+			
+			
 				</div>
 
 			</section>
@@ -121,26 +126,20 @@
 		</main>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
+		<footer class="flex">
 
 			<!-- Seção de Contato - Redes Sociais-->
 			<section id="redes_sociais">
 
-			<!-- Ícone do LinkedIn -->
-            <a href="https://www.linkedin.com/in/victoria-borges-7148ba1a1/" target="_blank">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn de Victoria Borges" />
-                </a>
-
-            <!-- Ícone do GitHub -->
-                <a href="https://github.com/VictoriaBorges" target="_blank">
-                 <img src="assets/img/github.svg" alt="GitHub de Victoria Borges" />
-                </a>
-
-            <!-- Ícone do Instagram -->
-                <a href="https://www.instagram.com/seu_usuario" target="_blank">
-                 <img src="assets/img/instagram.svg" alt="Instagram de Victoria Borges" />
-                </a>
-
+				<a href="">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
+				</a>
 
 			</section>
 

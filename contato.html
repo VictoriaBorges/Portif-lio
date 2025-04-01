@@ -2,36 +2,42 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Generation Brasil">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<link rel = "stylesheet" href="./assets/css/style.css">
+		
+		<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+
+		<!-- Link para a Folha de Estilo da Página - CSS -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
 		<title>Meu Perfil</title>
 	</head>
 	<body>
-	
+		<!-- Cabeçalho da Página (header) -->
 		<header>
-			
-			<div id="header_content">
-				
+			<!-- Div Conteudo do Cabeçalho -->
+			<div id="header_content" class="flex">
+				<!-- Titulo do Cabeçalho -->
 				<div id="titulo">
-					
+					<!-- Seu nome -->
 					<h1>Victoria Borges</h1>
-					<h2>Desenvolvedora Full stack</h2>
+					<h2>Desenvolvedora Fullstack</h2>
 				</div>
 
-				
+				<!-- Conteudo do Menu da Página (header) -->
 				<div id="menu">
-				
+					<!-- Menu da Página -->
 					<nav>
-					
+						<!-- Marcadores não ordenados + links -->
 						<ul id="menu">
 							<li>
-								<a href="index.html"> Home </a>
+								<a href="index.html">Home</a>
 							</li>
 							<li>
-								<a href="contato.html"> Contato </a>
+								<a href="contato.html">Contato</a>
 							</li>
 						</ul>
 					</nav>
@@ -39,31 +45,26 @@
 			</div>
 		</header>
 
-	
+		<!-- Seção Principal da Página (main) -->
 		<main>
-			
-		
-			<section id="contact">
-				
-				
-				<form action="#" method="submit">
-					<label for="nome">Nome: </label>
+			<div id="contact" class="flex">
+				<!-- Seção Formulário de Contato-->
+				<form action="#" method="submit" id="formulario">
+					<label for="name">Nome: </label>
 					<input
-						id="nome"
+						id="name"
 						type="text"
 						name="name"
-						placeholder="Digite seu Email"
-						required
+						placeholder="Digite seu nome"
 					/>
 					<span id="txtNome"></span>
 
 					<label for="email">Email: </label>
 					<input
 						id="email"
-						type="email"
+						type="text"
 						name="email"
-						placeholder= "Digite seu email"
-						required
+						placeholder="Digite seu email"
 					/>
 					<span id="txtEmail"></span>
 
@@ -73,7 +74,6 @@
 						type="text"
 						name="subject"
 						placeholder="Digite o título da mensagem"
-						required
 					/>
 					<span id="txtSubject"></span>
 
@@ -82,51 +82,50 @@
 						id="message"
 						name="message"
 						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
+					></textarea>
 
 					<button type="submit">Enviar</button>
 				</form>
 
-				<article id="mapa">
-
+				<!-- Seção do Google Maps -->
+				<section id="mapa" class="flex_start">
+					
 					<div id="endereco">
-						<p>Rua São Paulo, 100</p>
+						<p>Av. Paulista, 100</p>
 						<p>São Paulo - SP</p>
 					</div>
 
-					<iframe
-                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3170050857816!2d-46.634452726719275!3d-23.557055578802814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590801e85cbd%3A0x7d076b7f5b72e7f9!2sR.%20S%C3%A3o%20Paulo%2C%20100%20-%20S%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001513-000!5e0!3m2!1spt-BR!2sbr!4v1743010790912!5m2!1spt-BR!2sbr" width="600" height="450" 
-                   style="border:0;" allowfullscreen="" 
-                   loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                   >
-                </iframe>
-				</article>
-			</section>
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3170050857816!2d-46.634452726719275!3d-23.557055578802814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590801e85cbd%3A0x7d076b7f5b72e7f9!2sR.%20S%C3%A3o%20Paulo%2C%20100%20-%20S%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001513-000!5e0!3m2!1spt-BR!2sbr!4v1743532282217!5m2!1spt-BR!2sbr" width="400" height="300" 
+					style="border:0;" allowfullscreen="" loading="lazy" 
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+					>
+					</iframe>
+				</section>
+			</div>
 		</main>
 
-		
-		<footer>
-		
+		<!-- Rodapé da Página (footer) -->
+		<footer class="flex">
+			<!-- Seção de Contato - Redes Sociais-->
 			<section id="redes_sociais">
-			
-            <a href="https://www.linkedin.com/in/victoria-borges-7148ba1a1/" target="_blank">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn de Victoria Borges" />
-                </a>
-
-        
-                <a href="https://github.com/VictoriaBorges" target="_blank">
-                 <img src="assets/img/github.svg" alt="GitHub de Victoria Borges" />
-                </a>
-
-                <a href="https://www.instagram.com/seu_usuario" target="_blank">
-                 <img src="assets/img/instagram.svg" alt="Instagram de Victoria Borges" />
-                </a>
-
+				<a href="">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
+				</a>
 			</section>
 
-			<h3>Feito com 🧡 por Victoria Borges - 2025</h3>
+			<h3>Feito com 🧡 por Generation Brasil - 2024</h3>
+			
 		</footer>
+
+		<!-- Script JavaScript-->
+		<script src="./assets/js/script.js"></script>
+
 	</body>
 </html>
